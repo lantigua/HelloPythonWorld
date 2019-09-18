@@ -1,3 +1,5 @@
+import math
+
 info = 'Python is an interpreted, high-level, general-purpose programming language.'
 print(info)
 print(info[-1])
@@ -10,7 +12,9 @@ age = 2019 - int(birth_year)
 print(age)
 print(type(age))
 
-lbs_weight = input("Weight (Lbs: " )
+lbs_weight = input("Weight (Lbs): ")
 kg_weight = 0.45 * int(lbs_weight)
 print(kg_weight)
-print("delete tomorrow")
+print("things")
+x = -2.9
+print(abs(x))
