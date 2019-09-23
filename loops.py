@@ -12,3 +12,7 @@ for item in ["Pedro", "Luis", "Ana"]:
 
 for item in range(6, 10, 2):
     print(item)
+
+for x in range(3):
+    for y in range(3):
+        print({x}, {y})
