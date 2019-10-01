@@ -1,19 +1,20 @@
-class SuperPerson:
-    def __init__(self, name):
+class Mammal:
+    def __init__(self, name, age, language):
+        self.language = language
         self.name = name
+        self.age = age
 
+    def walk(self):
+        print("I walk forward")
+
+
+class Person(Mammal):
     def talk(self):
-        print("Hi, I'm {}" .format(self.name))
+        print("Hi, I'm {} " .format(self.name) + "{} years old".format(self.age) + " and I speak {}" .format(self.language))
 
 
-john = SuperPerson("John Smith")
+john = Person("John Smith", 32, "English")
 john.talk()
-
-nico = SuperPerson("Nico Jones")
+nico = Person("Nico Jones", 23, "Spanish")
 nico.talk()
-
-
-class NormalPerson(SuperPerson):
-    def age(self):
-        print("I'm {} years old")
-
+nico.walk()
