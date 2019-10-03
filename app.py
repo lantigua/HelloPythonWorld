@@ -1,4 +1,10 @@
 import math
+import converters
+from converters import lbs_to_kg
+
+print("This's my weight in kg {} " .format(lbs_to_kg(210)))
+
+print("This's my weight in lbs {} " .format(converters.kg_to_lbs(92)))
 
 info = 'Python is an interpreted, high-level, general-purpose programming language.'
 print(info)
