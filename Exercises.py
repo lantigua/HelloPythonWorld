@@ -1,4 +1,5 @@
 import utils
+from ecommerce import shipping
 
 number_list1 = [2, 2, 8, 9, 9, 2, 3, 2, 8, 10, 10]
 total = 0
@@ -44,5 +45,5 @@ list1 = [23, 25, 45, 72, 12, 66, 45, 65]
 maximum = utils.find_max(list1)
 print("The largest number in the list is {}".format(maximum))
 
-
+shipping.calc_shipping()
 
