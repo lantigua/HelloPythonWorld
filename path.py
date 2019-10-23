@@ -1,13 +1,23 @@
 from pathlib import Path
 
 # check existing directory
-path = Path("ecommerce")
-print(path.exists())
+# path = Path("ecommerce")
+# print(path.exists())
 
 # create new directory
-path = Path("emails")
-path.mkdir()
+# path = Path("emails")
+# path.mkdir()
+
+# remove directory
+# path = Path("emails")
+# path.rmdir()
 
 # global path
-glob_path = Path()
-print(glob_path.glob("*.*"))
+path = Path()
+# all files .py on directory
+for file in path.glob("*.py"):
+    print(file)
+
+# all files on directory
+for file in path.glob("*"):
+    print(file)
